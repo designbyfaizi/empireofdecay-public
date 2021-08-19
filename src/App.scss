@@ -1,0 +1,40 @@
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap");
+
+* {
+    // font-family: 'Montserrat', sans-serif;
+    font-family: "Mina", sans-serif;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@import "./Components/Animation/Animation.scss";
+
+@import "./Components/Pages/Account/Account.scss";
+
+@import "./Components/Pages/Inventory/Inventory.scss";
+
+@import "./Components/ScrollBar/ScrollBar.scss";
+
+@import "./Components/Navbar/Navbar.scss";
+
+@import "./Components/Pages/Home/Home.scss";
+
+@import "./Components/Pages/SignIn/SignIn.scss";
+
+@import "./Components/Pages/SignUp/SignUp.scss";
+
+@import "./Components/Footer/Footer.scss";
+
+@import "./Components/Pages/ContactUs/ContactUs.scss";
+
+@import "./Components/Pages/Privacy/Privacy.scss";
+
+@import "./Components/Pages/Terms/Terms.scss";
+
+@import "./Components/Pages/Error/Error.scss";

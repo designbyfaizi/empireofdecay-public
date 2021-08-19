@@ -1,0 +1,121 @@
+@import "../../Colors/colors.scss";
+$bg-img: url("../../../images/backgroundImage1.jpg");
+
+.account-page {
+    height: 110vh;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-image: $bg-img;
+    .account-container {
+        padding: 3rem;
+        margin: auto;
+        height: auto;
+        width: 70%;
+        background-color: $color-dark;
+
+        .account-info {
+            justify-content: center;
+            height: 100%;
+            padding-top: 150px;
+
+            .logo {
+                max-width: 150px;
+                height: auto;
+                margin: 0 auto;
+                @import "../../Animation/Animation.scss";
+            }
+            .info {
+                // text-align: center;
+                margin: 1rem 0;
+                h1 {
+                    font-size: 1rem;
+                    padding: 1rem 0;
+                    margin: 1rem auto;
+                    background-color: $color-grey;
+                    width: 35%;
+                    border-radius: 10px;
+                }
+                h2 {
+                    font-size: 1rem;
+                }
+            }
+
+            .input-field {
+                max-width: 100%;
+
+                input {
+                    margin: 1rem 0;
+                    width: 60%;
+                    height: 3rem;
+                    padding: 1rem;
+                    background: black;
+                    border: none;
+                    border-radius: 7px;
+                    color: $color-main;
+                    transition: transform 0.2s;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+            .my-btn {
+                font-family: "Mina", sans-serif !important;
+                font-weight: 400;
+                font-size: 1.5rem;
+                padding: 0.7rem 2rem;
+                background-color: $color-main;
+                color: $color-dark;
+                border: none;
+                transition: transform 0.2s;
+
+                -ms-transform: skewX(-20deg); /* IE 9 */
+                -webkit-transform: skewX(-20deg); /* Safari */
+                transform: skewX(-20deg);
+
+                .btn-text {
+                    -ms-transform: skewX(20deg) !important; /* IE 9 */
+                    -webkit-transform: skewX(20deg) !important; /* Safari */
+                    transform: skewX(20deg) !important;
+                }
+
+                &:hover {
+                    -ms-transform: skewX(0deg); /* IE 9 */
+                    -webkit-transform: skewX(0deg); /* Safari */
+                    transform: skewX(0deg);
+                    .btn-text {
+                        -ms-transform: skewX(0deg) !important; /* IE 9 */
+                        -webkit-transform: skewX(0deg) !important; /* Safari */
+                        transform: skewX(0deg) !important;
+                    }
+
+                    box-shadow: 0 0 7px $color-main;
+                    background-color: $color-main;
+                    color: $color-dark;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .account-page {
+        .account-container {
+            height: 100%;
+            width: 100%;
+
+            .account-info {
+                .info {
+                    h1 {
+                        font-size: 1rem;
+                    }
+                    h2 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

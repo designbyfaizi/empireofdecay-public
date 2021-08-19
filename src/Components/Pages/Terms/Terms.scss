@@ -1,0 +1,14 @@
+@import "../../Colors/colors.scss";
+
+.terms-page{
+    min-height: 100vh;
+    background: $color-dark;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .terms-container{
+        width: 70%;
+        // background: red;
+    }
+}

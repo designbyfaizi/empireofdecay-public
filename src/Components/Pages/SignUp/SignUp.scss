@@ -1,0 +1,148 @@
+@import "../../Colors/colors.scss";
+$bg-img: url("../../../images/backgroundImage1.jpg");
+
+.signup-page {
+    background-image: $bg-img;
+    height: 100vh;
+    align-items: center;
+
+    .nav-space {
+        height: 100px;
+    }
+    .signup-container {
+        background: $color-dark !important;
+        width: 60%;
+        height: auto;
+        .signup-form {
+            h1 {
+                font-size: 5rem;
+                font-weight: 700;
+                color: white;
+            }
+
+            .input-field {
+                max-width: 100%;
+
+                input {
+                    margin: 1rem 0;
+                    width: 60%;
+                    height: 3rem;
+                    padding: 1rem;
+                    background: black;
+                    border: none;
+                    border-radius: 7px;
+                    color: $color-main;
+                    transition: transform 0.2s;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+            .submit-button {
+                max-width: 100%;
+                .my-btn {
+                    margin: 2rem 0;
+                    font-family: "Mina", sans-serif !important;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    padding: 1rem 1.2rem;
+                    background-color: $color-main;
+                    color: $color-dark;
+                    border: none;
+                    transition: transform 0.2s;
+                    width: 60%;
+
+                    -ms-transform: skewX(-20deg); /* IE 9 */
+                    -webkit-transform: skewX(-20deg); /* Safari */
+                    transform: skewX(-20deg);
+
+                    .btn-text {
+                        -ms-transform: skewX(20deg) !important; /* IE 9 */
+                        -webkit-transform: skewX(20deg) !important; /* Safari */
+                        transform: skewX(20deg) !important;
+                    }
+                    &:hover {
+                        -ms-transform: skewX(0deg); /* IE 9 */
+                        -webkit-transform: skewX(0deg); /* Safari */
+                        transform: skewX(0deg);
+                        .btn-text {
+                            -ms-transform: skewX(0deg) !important; /* IE 9 */
+                            -webkit-transform: skewX(
+                                0deg
+                            ) !important; /* Safari */
+                            transform: skewX(0deg) !important;
+                        }
+
+                        box-shadow: 0 0 7px $color-main;
+                        background-color: $color-main;
+                        color: $color-dark;
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+            // .container {
+            //     cursor: pointer;
+            //     font-size: 2rem;
+            //     -webkit-user-select: none;
+            //     -moz-user-select: none;
+            //     -ms-user-select: none;
+            //     user-select: none;
+            //     input {
+            //         position: absolute;
+            //         opacity: 0;
+            //         cursor: pointer;
+            //         height: 0;
+            //         width: 0;
+
+            //         &:checked{
+            //             background-color: #2196F3;
+            //         }
+            //     }
+            //     .checkmark {
+            //         position: absolute;
+            //         top: 0;
+            //         left: 0;
+            //         height: 25px;
+            //         width: 25px;
+            //         background-color: #eee;
+            //       }
+            // }
+
+            .signup-link {
+                color: white;
+                margin: 0.5rem 0;
+                h3 {
+                    font-size: 1rem !important;
+                }
+                a {
+                    text-decoration: none;
+                    color: $color-main;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .signup-page {
+        height: auto;
+        min-height: 100vh;
+        .nav-space {
+            background: $color-dark !important;
+        }
+        .signup-container {
+            width: 100%;
+
+            .signup-form {
+                h1 {
+                    font-size: 3rem;
+                }
+                input {
+                    width: 90% !important;
+                }
+            }
+        }
+    }
+}

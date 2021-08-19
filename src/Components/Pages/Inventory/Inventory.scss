@@ -1,0 +1,77 @@
+@import "../../Colors/colors.scss";
+
+.inventory-page {
+    padding-top: 120px;
+    background: $color-dark;
+    width: 100%;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    .inventory-container {
+        margin: 4rem;
+        // background: rgb(32, 32, 32);
+        width: 70%;
+        .inventory {
+            overflow-x: hidden;
+            overflow-y: auto;
+            color: white;
+
+            .column {
+                justify-content: center;
+            }
+
+            .card {
+                border-radius: 20px;
+                border: none;
+                width: fit-content;
+                color: white;
+                background: $color-dark;
+                .card-img-top {
+                    border-radius: 20px;
+                    max-width: 200px;
+                    height: auto;
+                }
+                .btn {
+                    border-radius: 10px;
+                    border: none;
+                }
+
+                .btn:hover {
+                    // background-color: rgb(189, 27, 73);
+                    background-color: $color-main;
+                    color: $color-dark;
+                    border-radius: 10px;
+                }
+            }
+
+            .grow {
+                transition: all 0.2s ease-in-out;
+            }
+
+            .grow:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        text-align: center;
+
+        // .card-img-top {
+        //     border-radius: 20px;
+        //     max-width: 200px;
+        //     height: auto;
+        // }
+        .card-body {
+            h5 {
+                font-size: 0.8rem;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
