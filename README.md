@@ -1,5 +1,6 @@
 # empireofdecay
-Empire of Decay is a website for a game that I worked on. I integrated firebase for basic user authentication. Overall it was a fun project and I got to learn many new technologies including sass. 
+Empire of Decay is a website for a game that I worked on. 
+This was one of my first react projects for a client in which I integrated firebase for basic user authentication. Overall it was a fun project and I got to learn many new technologies including bootstrap, sass. 
 
 # Getting Started with Create React App
 
